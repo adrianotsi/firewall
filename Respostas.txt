@@ -1,0 +1,75 @@
+1 - Firewall em sua tradução literal seria Barreira de Fogo, assim como a metafora do nome sugere, na Informática
+os firewalls são aplicativos ou equipamentos entre um link de comunicação e um computador, é o firewall quem filtra
+todo o fluxo de dados entre ambos, são geralmente associados a redes TCP/IP.
+Este dispositivo de segurança existe na forma de software e de hardware, a combinação de ambos é chamado tecnicamente
+de "appliance". A complexidade de instalação depende do tamanho da rede, da política de segurança, da quantidade
+ de regras que controlam o fluxo de entrada e saída de informações e do grau de segurança desejado.
+
+2 - Um firewall, é uma lista ordenada com regras e ações, cada vez que um pacote de dados chega, o firewall o compara
+com cada regra (na ordem) até encontrar um que corresponda ao pacote. Então, ele executa a ação correspondente à regra.
+
+As regras podem ser: endereço de destino do pacote, endereço de origem, porta de destino, porta de origem, data, hora, etc.
+As ações podem ser: recusar o pacote, ignorar o pacote, aceitar o pacote, encaminhar o pacote para outra rede, modificar
+os cabeçalhos do pacote, etc.
+
+3 - Firewall de aplicação (proxy services):Os Firewalls de servidor proxy são os tipos de firewall mais seguros.
+Eles podem proteger os recursos de rede de forma eficaz filtrando as mensagens, mascarando seu endereço IP e limitando
+os tipos de tráfego. Eles fornecem uma análise de segurança completa e com reconhecimento dos protocolos que suportam.
+Para as grandes empresas, os firewalls de aplicação oferecem a melhor experiência na internet e resultam nas melhorias
+de desempenho da rede.
+
+Filtragem de pacotes (packet filtering):O firewall de filtro de pacotes controla o acesso à rede analisando os pacotes
+de saída e de entrada. Na prática, ele permite que um pacote passe ou seja bloqueado durante o caminho fazendo a comparação
+com critérios definidos antecipadamente, como:Endereços IP permitidos, Tipo de pacote, Número de porta para acesso.
+A técnica de filtragem de pacotes é ideal para redes pequenas, já que fica complexa quando implementada em redes maiores.
+Esse tipo de firewall não pode impedir todos os tipos de ataques, pois ele não tem a capacidade de enfrentar os ataques
+que usam vulnerabilidades nas camadas de aplicativos e lutar contra ataques de falsificação.
+
+Inspeção de estados (stateful inspection):O Stateful Packet Inspection (SPI), conhecido também como inspeção de dados,
+é uma poderosa arquitetura de firewall que examina os fluxos de tráfego de ponta a ponta na rede. Esses firewalls inteligentes
+e rápidos usam uma maneira inteligente de evitar o tráfego não autorizado, analisando os cabeçalhos dos pacotes e inspecionando
+o estado de cada um.Esses firewalls funcionam na camada de rede e por isso são mais seguros do que os modelos básicos de filtragem
+de pacotes.
+
+4 - Screening Router:
+
+É a arquitetura mais simples utilizada, caracteriza-se pela presença de um roteador de filtro de pacotes entre a rede interna e a
+internet. Nessa arquitetura existe comunicação direta entre múltiplos servidores internos e múltiplos servidores externos. A sua
+zona de risco é proporcional ao número de servidores na rede interna e os tipos de serviço de tráfego permitidos pelo roteador.
+Para cada tipo de serviço permitido a zona de risco aumenta consideravelmente. Controle de danos é igualmente difícil, já que o
+administrador da rede teria que verificar cada servidor a procura de traços de invasão regularmente. No caso de destruição do firewall
+tende a ficar muito complicado rastrear ou até mesmo notar a invasão. Já a facilidade de uso entretando é bem alta, já que o usuário
+pode acessar diretamente os serviços da internet. Essa configuração é um caso de "Aquilo que não é expressamente proibido é permitido".
+
+Screening Router:
+
+É a arquitetura mais simples utilizada, caracteriza-se pela presença de um roteador de filtro de pacotes entre a rede interna e a internet.
+Nessa arquitetura existe comunicação direta entre múltiplos servidores internos e múltiplos servidores externos. A sua zona de risco é proporcional
+ao número de servidores na rede interna e os tipos de serviço de tráfego permitidos pelo roteador. Para cada tipo de serviço permitido a zona de risco
+aumenta consideravelmente. Controle de danos é igualmente difícil, já que o administrador da rede teria que verificar cada servidor a procura de traços
+de invasão regularmente. No caso de destruição do firewall tende a ficar muito complicado rastrear ou até mesmo notar a invasão. Já a facilidade de uso
+entretando é bem alta, já que o usuário pode acessar diretamente os serviços da internet. Essa configuração é um caso de "Aquilo que não é expressamente
+proibido é permitido".
+
+Screened Subnet:
+
+É considerada a mais segura, pois adiciona uma nova camada de segurança à arquitetura Screened Host. Baseia-se na criação de uma sub-rede, geralmente
+chamada de Perimiter Network ou DMZ (Demilitarized Zone), que isola a rede interna da externa, sendo ela a responsável por toda a comunicação entre as
+redes, além da criação do Bastion Host. Sendo asssim, uma Screened Subnet é formada por um Bastion Host isolado pela sub-rede, um roteador responsável
+pela comunicação entre a rede interna e o bastion host e outro responsável pela comunicação entre o bastion host e a rede externa(internet).
+Para invadi-lo o ataque teria que passar por ambos os roteadores.Sendo assim, a zona de risco é reduzida drasticamente. A estância básica pode variar,
+porém como na maioria dos casos necessita-se alto nível de segurança utiliza-se a estância "Aquilo que não é expressamente permitido é proibido".
+
+
+5 - firewalls de hardware são mais caros do que os de software e são comumente usado em redes acessadas por vários computadores.
+O site TI Evalue observa que eles "têm a vantagem de ser separado do seu computador, se o seu computador pegar um vírus que poderia desativar o firewall.
+Os firewalls de software são adequados para a maioria dos usuários domésticos , e algum software de firewall pode incluir um bom nível de proteção contra vírus
+e spyware. 
+
+6 - Um firewall não consegue impedir um ataque cuja origem e destino seja a rede interna, pois os dados não passarão por ele, tornando-o ineficaz nesse tipo de ataque.
+Firewalls não aumentam força de senhas e nem previnem o uso inadequado das mesmas. Da mesma forma, eles são ineficazes em ataques não- técnicos como Engenharia Social.
+Firewalls não conseguem impedir que usuários acessem sites com códigos maliciosos, tornando necessária a conscientização dos usuários neste sentido.
+A política de segurança do firewall deve ser revista periodicamente, de modo a garantir o bom funcionamento do mesmo. Além disso, é importante fiscalizar
+o funcionamento do mesmo com certa periodicidade para garantir que nenhum Malware ou Cracker tenha descoberto e esteja explorando alguma falha do mesmo.
+Firewalls não são capazer de interceptar conexões que não passem por ele, como por exemplo um usuário que acesse a internet usando um modem 3G.
+Firewalls podem comprometer o desempenho da rede (ou do computador), demandando uma ampliação na infraestrutura para que seja possível superar o problema.
